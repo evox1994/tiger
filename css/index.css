@@ -264,6 +264,7 @@
 	background-image: url('../i/b-4-list-back.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	overflow: hidden;
 	position: relative;
 }
@@ -833,4 +834,118 @@
 	position: absolute;
 	left: 0;
 	top: 0;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+	.b-3-list li .abs-img {
+		top: 130px;
+	}
+	.b-3-list li:first-child .abs-img {
+		top: 10px;
+	}
+	.b-4-list li {
+		display: block;
+		padding-left: 0 !important;
+		padding-right: 0;
+		margin: 0 auto 20px;
+		width: 100%;
+	}
+	.b-5-wrap .item {
+		display: block;
+		margin: 0 auto 40px !important;
+	}
+	.b-6-list li {
+		width: calc(33% - 4px);
+	}
+	.b-8 .social-list-2 li {
+		width: calc(50% - 4px);
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.b-1 h1 {
+		width: 100%;
+	}
+	.b-1 p {
+		width: 100%;
+	}
+	.b-1-btn {
+		margin: 0 auto;
+	}
+	.b-2-left {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		padding-right: 0;
+	}
+	.b-2-right {
+		display: block;
+		width: 100%;
+		padding-left: 0;
+	}
+	.b-3-list-wrap {
+		padding: 30px 0 !important;
+	}
+	.b-3-list li .abs-img {
+		position: static;
+		margin: 0 auto 20px;
+		max-width: 100%;
+	}
+	.b-4-list .name {
+		margin-bottom: 30px;
+	}
+	.b-4-list .item {
+		display: block;
+		width: 100% !important;
+		margin: 0 auto 20px;
+	}
+	.b-5-wrap .item {
+		width: 100%;
+		max-width: 360px;
+	}
+	.b-6-list li {
+		display: block;
+		width: 100%;
+	}
+	.b-6-list li .li-image img {
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+		left: 50%;
+	}
+	.b-6-list li:hover .li-image img {
+		-webkit-transform: translate(-50%,calc(-50% - 5px));
+		-moz-transform: translate(-50%,calc(-50% - 5px));
+		-ms-transform: translate(-50%,calc(-50% - 5px));
+		transform: translate(-50%,calc(-50% - 5px));
+	}
+	.b-8 .social-list-1 li {
+		display: block;
+		width: 260px;
+		margin: 0 auto 20px;
+	}
+	.instagram-mobile {
+		display: block;
+	}
+	.instagram-desktop {
+		display: none;
+	}
+	.youtube-top .subscribe-a {
+		padding: 13px 40px;
+	}
+	.b-8 .social-list-1 li.li-youtube iframe {
+		height: 146px;
+		margin: 20px auto 0;
+	}
+	.b-8 .social-list-2 li {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
 }

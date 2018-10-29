@@ -85,6 +85,11 @@ body {
 	color: #000000;
 	font-family: 'SFUI-Regular';
 	padding-top: 129px;
+	box-sizing: border-box;
+}
+body.active {
+	height: 100vh !important;
+	overflow: hidden !important;
 }
 a{
 	text-decoration: none;
@@ -130,7 +135,7 @@ input:-moz-placeholder {
 .mobile-btn {
 	display: none;
 	position: absolute;
-	left: 15px;
+	right: 15px;
 	top: calc(50% - 11px);
 	width: 26px;
 	height: 22px;
@@ -255,6 +260,27 @@ input:-moz-placeholder {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+.mobile-menu {
+	display: none;
+	height: 100vh;
+	overflow-y: auto;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	left: 0;
+	top: -200%;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	padding: 30px 10px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.mobile-menu.active {
+	top: 0;
+}
 
 .header {
 	position: absolute;
@@ -266,11 +292,16 @@ input:-moz-placeholder {
 }
 .header.active {
 	position: fixed;
+	border-bottom: 1px solid #000000;
 }
 .header .b-block {
 	padding-top: 17px;
 	padding-bottom: 1px;
 	padding-left: 125px;
+}
+.header.active .b-block {
+	padding-top: 1px;
+	padding-left: 30px;
 }
 .header-logo {
 	position: absolute;
@@ -283,6 +314,12 @@ input:-moz-placeholder {
 	display: block;
 	max-width: 125px;
 	max-height: 125px;
+}
+.header.active .header-logo {
+	display: none;
+}
+.header.active .header-top {
+	display: none;
 }
 .header-logo img {
 	display: block;
@@ -535,8 +572,115 @@ input:-moz-placeholder {
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 }	
 @media screen and (max-width: 1280px){
-	
+	body {
+		padding-top: 118px;
+	}
+	.header-logo {
+		max-width: 75px;
+		max-height: 75px;
+	}
+	.header .b-block {
+		padding-left: 75px;
+	}
+	.header-slogan {
+		font-size: 22px;
+		margin-top: 7px;
+	}
+	.header-social {
+		margin: 0 5px;
+	}
+	.header-right {
+		margin-top: 0;
+	}
+	.header-nav ul li {
+		font-size: 11px;
+	}
+	.footer-text {
+		margin-right: 0;
+	}
+	.footer-nav {
+		display: block;
+		width: 100%;
+		margin-top: 30px;
+	}
+	.footer-nav li {
+		width: auto;
+	}
 }
 @media screen and (max-width: 767px){
-
+	body {
+		padding-top: 65px;
+	}
+	.header {
+		position: fixed;
+		border-bottom: 1px solid #000000;
+	}
+	.header .b-block {
+		padding-top: 19px;
+		padding-bottom: 19px;
+		padding-right: 65px;
+		padding-left: 65px;
+	}
+	.header-right, .header-nav {
+		display: none;
+	}
+	.header-logo {
+		max-width: 65px;
+		max-height: 65px;
+	}
+	.header-slogan {
+		float: none !important;
+		margin-top: 0;
+	}
+	.mobile-btn, .close-btn {
+		display: block;
+	}
+	.mobile-menu, .mobile-menu .header-nav {
+		display: block;
+	}
+	.mobile-menu .header-logo {
+		position: static;
+		display: inline-block;
+		vertical-align: top;
+		max-width: 125px;
+		max-height: 125px;
+		margin-bottom: 20px;
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+	.mobile-menu .header-nav ul {
+		display: block;
+	}
+	.mobile-menu .header-nav ul li {
+		font-size: 16px;
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	.mobile-menu .header-city {
+		margin-bottom: 10px;
+	}
+	.mobile-menu .header-social {
+		margin: 0 auto 10px;
+		display: block;
+	}
+	.footer-logo {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.footer-text {
+		display: block;
+		margin: 0 auto;
+	}
+	.footer-nav li {
+		display: block;
+		margin: 0 auto 10px;
+	}
+	.footer-nav li.big {
+		width: 100%;
+	}
+	.footer-nav li.li-logo-atk {
+		margin-bottom: 0;
+	}
 }

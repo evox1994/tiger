@@ -6,12 +6,26 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		infinite: true,
-		autoplay: true
+		autoplay: true,
+		responsive: [
+			{
+				breakpoint: 1280,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 
 	function b3Anim() {
 		$('.b-3-list li').each(function(){
-			var des = $(this).offset().top - 150;
+			var des = $(this).offset().top - 200;
 			var st = $(window).scrollTop();
 			if ( st > des ) {
 				$(this).addClass('anim');

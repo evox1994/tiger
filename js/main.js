@@ -1,5 +1,42 @@
 $(document).ready(function(){
 
+	function headerScroll(){
+		var st = $(window).scrollTop();
+
+		if ( $(window).width() > 767 ) {
+			if ( st > 129 ) {
+				$('.header').addClass('active');
+			} else {
+				$('.header').removeClass('active');
+			}
+		} else {
+			$('.header').removeClass('active');
+		}
+	}
+	headerScroll();
+
+	$(window).scroll(function(){
+		headerScroll();
+	});
+
+	$('.mobile-btn').click(function(){
+		if ( $(this).hasClass('active') ){
+			$(this).removeClass('active');
+			$('.mobile-menu').removeClass('active');
+			$('body').removeClass('active');
+		} else {
+			$(this).addClass('active');
+			$('.mobile-menu').addClass('active');
+			$('body').addClass('active');
+		}
+	});
+
+	$('.close-btn').click(function(){
+		$('.mobile-btn').removeClass('active');
+		$('.mobile-menu').removeClass('active');
+		$('body').removeClass('active');
+	});
+
 	$('.fancybox').fancybox();
 	$('input[type="tel"]').inputmask('+7 (999) 999-99-99');
 
