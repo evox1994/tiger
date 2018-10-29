@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('.b-6-slider').slick({
+	$('.b-3-slider').slick({
 		dots: true,
 		arrows: false,
 		slidesToShow: 3,
@@ -21,21 +21,6 @@ $(document).ready(function(){
 				}
 			}
 		]
-	});
-
-	function b3Anim() {
-		$('.b-3-list li').each(function(){
-			var des = $(this).offset().top - 200;
-			var st = $(window).scrollTop();
-			if ( st > des ) {
-				$(this).addClass('anim');
-			}
-		});
-	}
-	b3Anim();
-
-	$(window).scroll(function(){
-		b3Anim();
 	});
 
 });
