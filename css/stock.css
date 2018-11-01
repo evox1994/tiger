@@ -1,0 +1,97 @@
+.b-1 {
+	background-color: rgb(35, 30, 30);
+}
+.b-1 .b-block {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+.b-1 h1.title {
+	display: block;
+	text-align: left;
+	font-family: 'SFUI-Bold';
+	font-size: 36px;
+	color: #ffffff;
+	line-height: 1.2;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	opacity: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1 .subtitle {
+	display: block;
+	text-align: left;
+	font-size: 24px;
+	color: #ffffff;
+	opacity: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+/*.b-1.anim h2.title, .b-1.anim .subtitle {
+	opacity: 1;
+}*/
+
+.b-2 .b-block {
+	padding-top: 50px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+.stock-list li {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: calc(33% - 4px);
+	padding: 0 10px;
+	margin-bottom: 45px;
+}
+.stock-list li img {
+	display: block;
+	max-width: 100%;
+	max-height: 250px;
+	margin: 0 auto 40px;
+}
+.stock-list li .name {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'SFUI-Bold';
+	color: rgb(246, 82, 46);
+	font-size: 21px;
+	margin-bottom: 5px;
+}
+.stock-list li .subname {
+	display: block;
+	text-align: center;
+	color: rgb(35, 30, 30);
+	font-size: 21px;
+	margin-bottom: 10px;
+}
+.stock-list li p {
+	display: block;
+	text-align: left;
+	color: rgb(35, 30, 30);
+	line-height: 1.5;
+	font-family: 'SFUI-Thin';
+	font-size: 18px;
+}
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+	.stock-list li {
+		width: calc(50% - 4px);
+	}
+}
+@media screen and (max-width:767px) {
+	.stock-list li {
+		display: block;
+		margin: 0 auto 45px;
+		width: 100%;
+	}
+}
