@@ -1,0 +1,182 @@
+.b-1 {
+	background-color: rgb(35, 30, 30);
+}
+.b-1 .b-block {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+.b-1 h1.title {
+	display: block;
+	text-align: left;
+	font-family: 'SFUI-Bold';
+	font-size: 36px;
+	color: #ffffff;
+	line-height: 1.2;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	opacity: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1 .subtitle {
+	display: block;
+	text-align: left;
+	font-size: 24px;
+	color: #ffffff;
+	opacity: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+/*.b-1.anim h2.title, .b-1.anim .subtitle {
+	opacity: 1;
+}*/
+
+.b-2 .b-block {
+	padding-top: 0;
+	padding-bottom: 50px;
+}
+.b-2-wrap {
+	display: inline-block;
+	margin-top: -20px;
+	width: 100%;
+}
+.b-2 .filter {
+	margin-bottom: 60px;
+	width: 100%;
+}
+.b-2 .filter li {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: calc(25% - 4px);
+	padding: 0 10px;
+}
+.b-2 .filter li a {
+	display: block;
+	width: 100%;
+	position: relative;
+	padding: 10px 10px 10px 60px;
+	box-sizing: border-box;
+	font-family: 'SFUI-Regular';
+	color: #ffffff;
+	font-size: 18px;
+	background-color: rgb(138, 143, 153);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2 .filter li a img {
+	display: block;
+	max-width: 30px;
+	max-height: 30px;
+	position: absolute;
+	left: 25px;
+	top: calc(50% - 15px);
+}
+.b-2 .filter li.active a {
+	background-color: rgb(246, 82, 46);
+}
+.b-2 .filter li.active a::before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 100%;
+	left: calc(50% - 15px);
+	border-top: 15px solid rgb(246, 82, 46);
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+}
+.reviews-list {
+	display: none;
+	width: 100%;
+}
+.reviews-list.active {
+	display: block;
+}
+.reviews-list li {
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(33% - 4px);
+	box-sizing: border-box;
+	padding: 0 10px;
+	margin: 0 auto 30px;
+}
+.reviews-list li iframe {
+	display: block;
+	width: 100%;
+	min-height: 203px;
+}
+.reviews-list li a {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 100%;
+	box-sizing: border-box;
+	border: 4px solid #8a8f99;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.reviews-list li a:hover {
+	border-color: rgb(246, 82, 46);
+}
+.reviews-list li a img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+	.b-2 .filter li a {
+		padding: 10px 10px 10px 40px;
+	}
+	.b-2 .filter li a img {
+		left: 5px;
+	}
+	.reviews-list li {
+		width: calc(50% - 4px);
+	}
+	.reviews-list li iframe {
+		min-height: 316px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.b-2 .filter li {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.b-2 .filter li a {
+		padding: 10px 10px 10px 60px;
+	}
+	.b-2 .filter li a img {
+		left: 25px;
+	}
+	.b-2 .filter li.active a::before {
+		display: none;
+	}
+	.reviews-list li {
+		display: block;
+		width: 100%;
+	}
+	.reviews-list li iframe {
+		min-height: 378px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.reviews-list li iframe {
+		min-height: 255px;
+	}
+}

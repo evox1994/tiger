@@ -625,6 +625,313 @@ input:-moz-placeholder {
 	width: 100%;
 }
 
+.popup {
+	background-color: #ffffff;
+	border-top: 6px solid rgb(246, 82, 46);
+	box-sizing: border-box;
+	padding: 95px;
+	width: 90%;
+	max-width: 540px;
+	font-family: 'SFUI-Regular';
+}
+.popup-name {
+	display: block;
+	text-align: left;
+	font-family: 'SFUI-Bold';
+	font-size: 18px;
+	text-transform: uppercase;
+	color: rgb(35, 30, 30);
+}
+.popup-subname {
+	display: block;
+	text-align: left;
+	font-size: 16px;
+	color: #6c7380;
+	margin-bottom: 60px;
+}
+.popup-list {
+	margin-bottom: 60px;
+}
+.popup-list li {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	box-sizing: border-box;
+	padding: 0 10px 0 70px;
+	width: calc(50% - 4px);
+	font-family: 'SFUI-Medium';
+	text-align: left;
+	font-size: 14px;
+	color: rgb(35, 30, 30);
+	line-height: 1.2;
+}
+.popup-list li img {
+	display: block;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.popup form {
+	display: block;
+	width: 100%;
+}
+.popup form .select-wrap {
+	position: relative;
+	margin-bottom: 30px;
+}
+.popup form .select-area {
+	display: block;
+	text-align: left;
+	padding-bottom: 7px;
+	background-color: transparent;
+	border-bottom: 1px solid rgb(204, 204, 204);
+	width: 100%;
+	font-family: 'SFUI-Regular';
+	font-size: 16px;
+	color: rgb(108, 115, 128);
+	box-sizing: border-box;
+	padding-right: 11px;
+	position: relative;
+}
+.popup form .select-area.active {
+	border-color: rgb(35, 30, 30);
+}
+.popup form .select-area::before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: calc(50% - 9px);
+	right: 0;
+	border-top: 5px solid rgb(108, 115, 128);
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.popup form .select-area.active::before {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.popup form .select-area span {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+.popup form .select-area:hover {
+	cursor: pointer;
+}
+.popup form .select-drop {
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	border: 1px solid rgb(35, 30, 30);
+	border-top: 0;
+	border-radius: 0 0 10px 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	z-index: 10;
+}
+.popup form .select-drop.active {
+	display: block;
+}
+.popup form .select-drop a {
+	display: block;
+	text-align: left;
+	margin-bottom: 5px;
+	font-family: 'SFUI-Regular';
+	font-size: 16px;
+	color: rgb(108, 115, 128);
+}
+.popup form .select-drop a:last-child {
+	margin-bottom: 0;
+}
+.popup form select {
+	display: none;
+	visibility: hidden;
+	border: 0;
+	width: 0;
+	height: 0;
+	margin: 0;
+	font-size: 0;
+	padding: 0;
+}
+.popup form input {
+	display: block;
+	text-align: left;
+	padding-bottom: 7px;
+	margin-bottom: 30px;
+	border: 0;
+	background-color: transparent;
+	border-bottom: 1px solid rgb(204, 204, 204);
+	width: 100%;
+	font-family: 'SFUI-Regular';
+	font-size: 16px;
+	color: rgb(108, 115, 128);
+}
+.popup form input::-webkit-input-placeholder {color:rgb(108, 115, 128);}
+.popup form input::-moz-placeholder          {color:rgb(108, 115, 128);}
+.popup form input:-moz-placeholder           {color:rgb(108, 115, 128);}
+.popup form input:-ms-input-placeholder      {color:rgb(108, 115, 128);}
+.popup form input:focus::-webkit-input-placeholder {color:transparent;}
+.popup form input:focus::-moz-placeholder          {color:transparent;}
+.popup form input:focus:-moz-placeholder           {color:transparent;}
+.popup form input:focus:-ms-input-placeholder      {color:transparent;}
+.popup form input:focus {
+	border-color: rgb(35, 30, 30);
+}
+.popup form button {
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+	color: #ffffff;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 17px 20px;
+	background-color: rgb(246, 82, 46);
+	font-size: 16px;
+	font-family: 'SFUI-Medium';
+	border: 0;
+	margin-bottom: 20px;
+}
+.popup form button:hover {
+	cursor: pointer;
+}
+.popup form .button-text {
+	display: inline-block;
+	max-width: 100%;
+	font-size: 14px;
+	color: rgb(108, 115, 128);
+	line-height: 1.2;
+	position: relative;
+	text-align: left;
+	padding-left: 40px;
+	font-family: 'SFUI-Thin';
+}
+.popup form .button-text a {
+	color: rgb(108, 115, 128);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.popup form .button-text a:hover {
+	color: #000000;
+}
+.popup form .button-text .radio-btn {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border: 1px solid rgb(204, 204, 204);
+	left: 0;
+	top: 2px;
+	border-radius: 6px;
+}
+.popup form .button-text .radio-btn.error {
+	border-color: #ff0000;
+}
+.popup form .button-text .radio-btn:hover {
+	cursor: pointer;
+}
+.popup form .button-text .radio-btn.active::before {
+	content: '';
+	display: block;
+	width: 7px;
+	height: 2px;
+	position: absolute;
+	left: 3px;
+	top: 10px;
+	background-color: rgb(204, 204, 204);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.popup form .button-text .radio-btn.active::after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 2px;
+	position: absolute;
+	left: 7px;
+	top: 9px;
+	background-color: rgb(204, 204, 204);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.popup .file-wrap {
+	width: 100%;
+	display: block;
+}
+.popup .file-inp {
+	display: block;
+	text-align: left;
+	padding-bottom: 7px;
+	margin-bottom: 30px;
+	border: 0;
+	background-color: transparent;
+	border-bottom: 1px solid rgb(204, 204, 204);
+	width: 100%;
+	font-family: 'SFUI-Regular';
+	font-size: 16px;
+	color: rgb(108, 115, 128);
+	position: relative;
+	padding-right: 28px;
+	box-sizing: border-box;
+}
+.popup .file-inp::before {
+	content: '';
+	display: block;
+	width: 18px;
+	height: 18px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url('../i/file-img.png');
+	position: absolute;
+	right: 5px;
+	top: 3px;
+}
+.popup .file-inp:hover {
+	cursor: pointer;
+}
+.popup .file-wrap input.hide-input {
+	width: 0 !important;
+	padding: 0 !important;
+	height: 0 !important;
+	visibility: hidden !important;
+	margin: 0 !important;
+	border: 0 !important;
+}
+.popup:hover {
+	cursor: default;
+}
+.fancybox-slide--html .fancybox-close-small {
+	padding: 0;
+	opacity: 0.4;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.fancybox-slide--html .fancybox-close-small:hover {
+	opacity: 1;
+}
+
 
 
 

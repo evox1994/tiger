@@ -1,0 +1,46 @@
+.b-1 {
+	background-color: rgb(35, 30, 30);
+}
+.b-1 .b-block {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.b-1 h1.title {
+	display: block;
+	text-align: left;
+	font-family: 'SFUI-Bold';
+	font-size: 36px;
+	color: #ffffff;
+	line-height: 1.2;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	opacity: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1 .subtitle {
+	display: block;
+	text-align: left;
+	font-size: 24px;
+	color: #ffffff;
+	opacity: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+/*.b-1.anim h2.title, .b-1.anim .subtitle {
+	opacity: 1;
+}*/
+
+.b-2 .b-block {
+	min-height: calc(100vh - 323px);
+	padding-top: 130px;
+	padding-bottom: 130px;
+}.b-2 img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}

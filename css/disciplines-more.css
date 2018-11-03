@@ -421,7 +421,13 @@
 .b-6-list li {
 	display: inline-block;
 	width: 100%;
+	margin-bottom: 100px;
+}
+.b-6-list li:first-child {
 	margin-top: -66px;
+}
+.b-6-list li:last-child {
+	margin-bottom: 0;
 }
 .b-6-list .li-wrap {
 	box-sizing: border-box;

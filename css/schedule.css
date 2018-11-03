@@ -1,0 +1,181 @@
+.b-1 {
+	background-color: rgb(35, 30, 30);
+}
+.b-1 .b-block {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+.b-1 h1.title {
+	display: block;
+	text-align: left;
+	font-family: 'SFUI-Bold';
+	font-size: 36px;
+	color: #ffffff;
+	line-height: 1.2;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	opacity: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1 .subtitle {
+	display: block;
+	text-align: left;
+	font-size: 24px;
+	color: #ffffff;
+	opacity: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+/*.b-1.anim h2.title, .b-1.anim .subtitle {
+	opacity: 1;
+}*/
+
+.b-2 .b-block {
+	padding-top: 0;
+	padding-bottom: 50px;
+}
+.b-2-wrap {
+	display: inline-block;
+	width: 100%;
+	margin-top: -30px;
+}
+.b-2-list li {
+	display: block;
+	margin-bottom: 25px;
+}
+.b-2-list .times {
+	display: inline-block;
+	vertical-align: bottom;
+	padding-right: 15px;
+	box-sziing: border-box;
+	width: 270px;
+}
+.b-2-list .times-wrap {
+	box-sizing: border-box;
+	width: 100%;
+	background-color: rgb(138, 143, 153);
+	padding: 15px 30px;
+}
+.b-2-list .times span {
+	display: block;
+	text-align: left;
+	color: #ffffff;
+	font-family: 'SFUI-Bold';
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.b-2-list .times-left span:last-child, .b-2-list .times-right span:last-child {
+	margin-bottom: 0;
+}
+.b-2-list .times-left {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: calc(70% - 4px);
+}
+.b-2-list .times-right {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: calc(30% - 4px);
+}
+.nap, .trener {
+	display: inline-block;
+	vertical-align: bottom;
+	box-sizing: border-box;
+	padding: 0 15px;
+	width: calc(((100% - 445px)/100)*30 - 12px);
+}
+.address {
+	display: inline-block;
+	vertical-align: bottom;
+	box-sizing: border-box;
+	padding: 0 15px;
+	width: calc(((100% - 445px)/100)*40 - 8px);
+}
+.nap-title, .trener-title, .address-title {
+	display: block;
+	text-align: left;
+	margin-bottom: 5px;
+	font-family: 'SFUI-Light';
+	font-size: 16px;
+	color: rgb(138, 143, 153);
+}
+.b-2-list p {
+	display: block;
+	text-align: left;
+	font-size: 18px;
+	color: rgb(35, 30, 30);
+}
+.b-2-list .button {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 175px;
+	box-sizing: border-box;
+	padding-left: 15px;
+}
+.b-2-btn {
+	display: block;
+	width: 160px;
+	border-radius: 10px;
+	background-color: rgb(246, 82, 46);
+	color: #ffffff;
+	padding: 18px 20px;
+	box-sizing: border-box;
+	text-align: center;
+	font-family: 'SFUI-Medium';
+	font-size: 16px;
+	margin: 0 auto;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2-btn:hover {
+	background-color: rgb(228, 73, 36);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+	.b-2-list .times {
+		display: block;
+		margin: 0 auto 10px;
+		padding-right: 0;
+		width: 255px;
+	}
+	.b-2-list .button {
+		display: block;
+		width: 100%;
+		margin-top: 10px;
+		padding-left: 0;
+	}
+	.nap, .trener, .address {
+		width: calc(33% - 4px);
+	}
+	.b-2-list li {
+		margin-bottom: 40px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.nap, .trener, .address {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		padding: 0;
+	}
+	.nap-title, .trener-title, .address-title {
+		text-align: center;
+	}
+	.b-2-list p {
+		text-align: center;
+	}
+}

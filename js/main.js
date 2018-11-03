@@ -112,5 +112,21 @@ $(document).ready(function(){
 		$(this).parents('.select-wrap').find('.select-area').removeClass('active');
 		return false;
 	});
+	$('body').on('click',function(e){
+		var container = $('.select-wrap');
+		if (container.has(e.target).length === 0) {
+			$('.select-drop').removeClass('active');
+			$('.select-area').removeClass('active');
+		}
+	});
+
+	$('body').on('click','.file-inp',function(){
+		$(this).parents('.file-wrap').find('input[type="file"]').click();
+		return false;
+	});
+	$('body').on('change','.file-wrap input[type="file"]',function(){
+		files = this.files;
+		$(this).closest('.file-wrap').find('.file-inp').text(files[0].name);
+	});
 
 });
