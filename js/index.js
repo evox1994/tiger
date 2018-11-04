@@ -4,7 +4,9 @@ $(document).ready(function(){
 		dots: true,
 		adaptiveHeight: true,
 		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		fade: true,
+		speed: 1500
 	});
 	$('.b-6-slider').slick({
 		dots: true,

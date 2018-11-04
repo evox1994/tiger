@@ -51,6 +51,17 @@
 	/*background-attachment: fixed;*/
 	box-sizing: border-box;
 	padding: 0 18px;
+	/*opacity: 0 !important;
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-ms-transition: all 2s;
+	transition: all 2s;*/
+}
+/*.b-1-slide.slick-active {
+	opacity: 1 !important;
+}*/
+.b-1-slide:nth-child(2) {
+	background-image: url('../i/disciplines-back.jpg');
 }
 .b-1-slider .slick-dots {
 	display: none !important;
