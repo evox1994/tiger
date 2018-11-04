@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+	$('.b-1-slider').slick({
+		dots: true,
+		adaptiveHeight: true,
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
 	$('.b-6-slider').slick({
 		dots: true,
 		arrows: false,

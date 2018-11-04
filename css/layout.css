@@ -308,10 +308,36 @@ input:-moz-placeholder {
 	padding-top: 17px;
 	padding-bottom: 1px;
 	padding-left: 125px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header .b-block::before {
+	content: '';
+	display: block;
+	width: 0px;
+	height: 60px;
+	position: absolute;
+	left: 0;
+	top: calc(50% - 30px);
+	background-image: url('../i/small-logo.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header.active .b-block::before {
+	width: 66px;
 }
 .header.active .b-block {
 	padding-top: 1px;
-	padding-left: 30px;
+	padding-left: 86px;
 }
 .header-logo {
 	position: absolute;
@@ -476,14 +502,14 @@ input:-moz-placeholder {
 	top: 100%;
 	background-color: #ffffff;
 	border-radius: 0 0 10px 10px;
-	padding: 5px 10px 10px;
+	padding: 5px 0 10px;
 	box-sizing: border-box;
 }
 .header-nav ul li.li-drop:hover .nav-drop {
 	display: block;
 }
 .header-nav ul li.li-drop .nav-drop .drop-item {
-	padding: 5px 0;
+	padding: 5px 10px;
 	width: 100%;
 	border-bottom: 1px solid rgb(227, 228, 229);
 	text-align: left;

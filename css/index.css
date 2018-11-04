@@ -1,15 +1,8 @@
-.b-1 {
-	background-image: url('../i/b-1-back.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-}
 .b-1 .b-block {
 	padding-top: 119px;
 	padding-bottom: 117px;
 }
-.b-1 h1 {
+.b-1 h2 {
 	display: block;
 	width: 50%;
 	margin-bottom: 15px;
@@ -47,6 +40,75 @@
 .b-1-btn:hover {
 	background-color: rgb(228, 73, 36);
 }
+.b-1-slider {
+	position: relative;
+}
+.b-1-slide {
+	background-image: url('../i/b-1-back.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	box-sizing: border-box;
+	padding: 0 18px;
+}
+.b-1-slider .slick-dots {
+	display: none !important;
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	width: 100%;
+}
+.b-1-slider:hover .slick-dots {
+	display: block !important;
+}
+.b-1-slider .slick-dots li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 8px;
+}
+.b-1-slider .slick-dots li button {
+	display: block;
+	border: 0;
+	font-size: 0;
+	background-color: rgb(241, 242, 242);
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	opacity: 0.5;
+}
+.b-1-slider .slick-dots li button:hover {
+	cursor: pointer;
+}
+.b-1-slider .slick-dots li.slick-active button {
+	opacity: 1;
+}
+.b-1-slider .slick-arrow {
+	display: none !important;
+	font-size: 0;
+	border: 0;
+	background-color: transparent;
+	width: 18px;
+	height: 34px;
+	position: absolute;
+	top: calc(50% - 17px);
+	z-index: 1;
+}
+.b-1-slider .slick-arrow:hover {
+	cursor: pointer;
+}
+.b-1-slider:hover .slick-arrow {
+	display: block !important;
+}
+.b-1-slider .slick-next {
+	right: 10px;
+	background-image: url('../i/arr-next.png');
+}
+.b-1-slider .slick-prev {
+	left: 10px;
+	background-image: url('../i/arr-prev.png');
+}
+
 
 .b-2 {
 	background-color: rgb(35, 30, 30);

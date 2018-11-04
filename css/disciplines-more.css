@@ -1,5 +1,5 @@
 .b-1 {
-	background-image: url('../i/b-1-back.jpg');
+	background-image: url('../i/disciplines-back.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -496,6 +496,9 @@
 	-moz-transition-delay: 0.8s;
 	-ms-transition-delay: 0.8s;
 	transition-delay: 0.8s;
+}
+.b-6-list .li-profile span {
+	color: rgb(35, 30, 30);
 }
 .b-6-list p {
 	display: block;

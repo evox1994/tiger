@@ -60,6 +60,13 @@
 	width: 100%;
 	background-color: rgb(138, 143, 153);
 	padding: 15px 30px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2-list .times-wrap:hover {
+	background-color: #6c6f75;
 }
 .b-2-list .times span {
 	display: block;
