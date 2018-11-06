@@ -302,7 +302,7 @@ input:-moz-placeholder {
 }
 .header.active {
 	position: fixed;
-	border-bottom: 1px solid #000000;
+	border-bottom: 1px solid #e6e6e6;
 }
 .header .b-block {
 	padding-top: 17px;
@@ -513,6 +513,7 @@ input:-moz-placeholder {
 	width: 100%;
 	border-bottom: 1px solid rgb(227, 228, 229);
 	text-align: left;
+	box-sizing: border-box;
 }
 .header-nav ul li.li-drop .nav-drop .drop-item:last-child {
 	border: 0;
@@ -634,11 +635,11 @@ input:-moz-placeholder {
 	padding-right: 5px;
 	box-sizing: border-box;
 }
-.footer-nav li .left-part span, .footer-nav li .right-part span {
+.footer-nav li .left-part span, .footer-nav li .right-part span, .footer-nav li .disciplines-wrap span {
 	margin-bottom: 1px;
 	line-height: 1;
 }
-.footer-nav li .left-part span a, .footer-nav li .right-part span a {
+.footer-nav li .left-part span a, .footer-nav li .right-part span a, .footer-nav li .disciplines-wrap span a {
 	font-family: 'SFUI-Thin';
 	font-size: 12px;
 }
@@ -649,6 +650,65 @@ input:-moz-placeholder {
 .footer-nav li.li-logo-atk a img {
 	display: block;
 	width: 100%;
+}
+
+.cookie {
+	display: none;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 50;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.44);
+}
+.cookie .b-block {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.cookie.active {
+	display: block;
+}
+.cookie p {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	font-size: 16px;
+	color: rgb(35, 30, 30);
+	line-height: 1.2;
+	width: calc(100% - 165px);
+	text-align: left;
+}
+.cookie p a {
+	color: rgb(246, 82, 46);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.cookie p a:hover {
+	color: rgb(35, 30, 30);
+}
+.cookie-btn {
+	display: inline-block;
+	color: #ffffff;
+	padding: 14px 20px;
+	max-width: 100%;
+	box-sizing: border-box;
+	background-color: rgb(108, 115, 128);
+	border-radius: 10px;
+	font-family: 'SFUI-Medium';
+	font-size: 16px;
+	width: 160px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.cookie-btn:hover {
+	cursor: pointer;
+	/*background-color: #5379aa;*/
 }
 
 .popup {
@@ -1103,5 +1163,11 @@ input:-moz-placeholder {
 	}
 	.footer-nav li.li-logo-atk {
 		margin-bottom: 0;
+	}
+	.cookie p {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
 	}
 }

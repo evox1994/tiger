@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+	var ss = sessionStorage.getItem('site');
+	if ( ss ) {
+		$('.cookie').removeClass('active');
+	} else {
+		sessionStorage.setItem('site','true');
+		$('.cookie').addClass('active');
+	}
+	
+	$('.cookie-btn').click(function(){
+		$('.cookie').removeClass('active');
+	});
+
 	function headerScroll(){
 		var st = $(window).scrollTop();
 

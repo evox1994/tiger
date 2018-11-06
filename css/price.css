@@ -48,7 +48,6 @@
 	box-sizing: border-box;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url('../i/price-back.png');
 	background-size: cover;
 	margin-bottom: 50px;
 	/*opacity: 1;
@@ -73,16 +72,16 @@
 	transform: translateY(0);
 }*/
 .b-2-list li.green-li {
-	background-color: rgb(0, 187, 74);
+	background-image: url('../i/price-back-green.jpg');
 }
 .b-2-list li.yellow-li {
-	background-color: rgb(255, 181, 51);
+	background-image: url('../i/price-back-yellow.jpg');
 }
 .b-2-list li.red-li {
-	background-color: rgb(251, 76, 76);
+	background-image: url('../i/price-back-red.jpg');
 }
 .b-2-list li.orange-li {
-	background-color: rgb(246, 82, 46);
+	background-image: url('../i/price-back-orange.jpg');
 }
 .b-2-list .li-name {
 	display: block;
@@ -168,6 +167,7 @@
 }
 .b-3-list .qwestion:hover {
 	cursor: pointer;
+	background-color: rgb(251, 76, 76);
 }
 .b-3-list .qwestion::before {
 	content: '';

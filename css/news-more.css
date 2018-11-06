@@ -44,11 +44,32 @@
 	box-sizing: border-box;
 	padding-right: 375px;
 	position: relative;
+	text-align: left;
 }
-.b-2 img {
-	display: block;
+.b-2-img {
+	display: inline-block;
 	max-width: 100%;
 	margin-bottom: 40px;
+	position: relative;
+}
+.b-2-img img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.b-2-img span {
+	display: block;
+	text-align: left;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: 'SFUI-Thin';
+	font-size: 12px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 .b-2 iframe {
 	width: 100%;
