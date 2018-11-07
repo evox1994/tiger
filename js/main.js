@@ -98,7 +98,7 @@ $(document).ready(function(){
 			$(this).find('select option').each(function(){
 				$(this).parents('.select-wrap').find('.select-drop').append('<a href=".'+$(this).attr('class')+'">'+$(this).text()+'</a>');
 			});
-			$(this).find('.select-area span').text(text);
+			//$(this).find('.select-area span').text(text);
 		});
 	}
 	Selects();
@@ -139,6 +139,12 @@ $(document).ready(function(){
 	$('body').on('change','.file-wrap input[type="file"]',function(){
 		files = this.files;
 		$(this).closest('.file-wrap').find('.file-inp').text(files[0].name);
+	});
+
+	$('.popup').on('click',function(e){
+		if ( !($(e.target).hasClass('required')) ) {
+			$('input').blur();
+		}
 	});
 
 });

@@ -1,0 +1,28 @@
+.b-1 .b-block {
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+.b-1 {
+	color: rgb(35, 30, 30);
+}
+.b-1 a {
+	color: rgb(246, 82, 46);
+}
+.b-1 .main-caption {
+	display: block;
+	font-family: 'SFUI-Bold';
+	font-size: 36px;
+}
+.b-1 .second-caption {
+	font-size: 24px;
+	margin: 60px auto 40px;
+	font-family: 'SFUI-Bold';
+}
+.b-1 p {
+	display: block;
+	text-align: left;
+	font-size: 18px;
+	font-family: 'SFUI-Light';
+	line-height: 1.5;
+	margin-bottom: 30px;
+}

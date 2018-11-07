@@ -219,6 +219,8 @@ input:-moz-placeholder {
 	width: 26px;
 	height: 22px;
 	z-index: 1;
+	right: 10px;
+	top: 10px;
 }
 .close-btn::after {
 	content: '';
@@ -314,8 +316,7 @@ input:-moz-placeholder {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-.header .b-block::before {
-	content: '';
+.header .header-small-logo {
 	display: block;
 	width: 0px;
 	height: 60px;
@@ -332,7 +333,7 @@ input:-moz-placeholder {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-.header.active .b-block::before {
+.header.active .header-small-logo {
 	width: 66px;
 }
 .header.active .b-block {
@@ -411,6 +412,19 @@ input:-moz-placeholder {
 	box-sizing: border-box;
 	border: 2px solid #9C9C9B;
 	border-radius: 5px 5px 5px 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.header-social li a.soc-1:hover {
+	border-color: rgb(48, 191, 57);
+}
+.header-social li a.soc-2:hover {
+	border-color: rgb(123, 81, 157);
+}
+.header-social li a.soc-3:hover {
+	border-color: rgb(59, 160, 255);
 }
 .header-social li a img {
 	display: block;
@@ -423,6 +437,20 @@ input:-moz-placeholder {
 	-moz-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	filter: grayscale(1);
+}
+.header-social li a:hover img {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	filter: grayscale(0);
 }
 .header-phone {
 	display: inline-block;
@@ -720,6 +748,7 @@ input:-moz-placeholder {
 	width: 90%;
 	max-width: 540px;
 	font-family: 'SFUI-Regular';
+	text-align: center;
 }
 .popup-name {
 	display: block;
@@ -1102,6 +1131,7 @@ input:-moz-placeholder {
 	}
 	.header-nav ul li.li-drop .nav-drop .drop-item {
 		text-align: center;
+		border: 0;
 	}
 	.header-nav ul li.li-drop .nav-drop .drop-item a {
 		font-size: 14px;

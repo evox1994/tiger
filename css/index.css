@@ -886,6 +886,13 @@
 	background-color: rgb(73, 118, 168);
 	border-radius: 10px;
 	font-family: 'SFUI-Medium';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.vk-top .subscribe-a:hover {
+	background-color: rgb(53, 98, 148);
 }
 .inst-top .subscribe-a {
 	padding: 13px 70px;
@@ -893,6 +900,13 @@
 	background-color: rgb(220, 49, 122);
 	border-radius: 10px;
 	font-family: 'SFUI-Medium';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.inst-top .subscribe-a:hover {
+	background-color: rgb(200, 29, 102);
 }
 .youtube-top .subscribe-a {
 	padding: 13px 70px;
@@ -900,6 +914,13 @@
 	background-color: rgb(230, 55, 59);
 	border-radius: 10px;
 	font-family: 'SFUI-Medium';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.youtube-top .subscribe-a:hover {
+	background-color: rgb(210, 35, 39);
 }
 .instagram-mobile {
 	display: none;
@@ -968,7 +989,10 @@
 	}
 }
 @media screen and (max-width: 767px) {
-	.b-1 h1 {
+	.b-1-slide {
+		background-position: 70%;
+	}
+	.b-1 h2 {
 		width: 100%;
 	}
 	.b-1 p {
@@ -1004,6 +1028,9 @@
 		width: 100% !important;
 		margin: 0 auto 20px;
 	}
+	.b-5 {
+		background-position: 5%;
+	}
 	.b-5-wrap .item {
 		width: 100%;
 		max-width: 360px;
@@ -1024,6 +1051,9 @@
 		-moz-transform: translate(-50%,calc(-50% - 5px));
 		-ms-transform: translate(-50%,calc(-50% - 5px));
 		transform: translate(-50%,calc(-50% - 5px));
+	}
+	.b-6-list li span {
+		text-align: center;
 	}
 	.b-8 .social-list-1 li {
 		display: block;

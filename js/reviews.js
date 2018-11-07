@@ -10,7 +10,7 @@ $(document).ready(function(){
 			$(el).addClass('active');
 			if ( $(window).width() < 768 ) {
 				var des = $(el).offset().top - 200;
-				$('body,html').animate({scrollTop: des},800);
+				$('body,html').animate({scrollTop: des},1000);
 			}
 		}
 		return false;

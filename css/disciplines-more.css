@@ -601,6 +601,8 @@
 	-moz-transform: translateY(10px);
 	-ms-transform: translateY(10px);
 	transform: translateY(10px);
+	position: relative;
+	overflow: hidden;
 }
 .b-7.anim .b-7-list li {
 	opacity: 1;
@@ -608,6 +610,28 @@
 	-moz-transform: translateY(0);
 	-ms-transform: translateY(0);
 	transform: translateY(0);
+}
+.b-7-list li::before {
+	content: '';
+	position: absolute;
+	display: block;
+	opacity: 0.2;
+	background-color: #362f32;
+	top: 0;
+	left: -40%;
+	width: 0;
+	height: 100%;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	-webkit-transform: skew(-20deg,0);
+	-moz-transform: skew(-20deg,0);
+	-ms-transform: skew(-20deg,0);
+	transform: skew(-20deg,0);
+}
+.b-7-list li:hover:before {
+	width: 180%;
 }
 .b-7-list li.green-li {
 	background-image: url('../i/price-back-green.jpg');
@@ -628,6 +652,7 @@
 	font-size: 24px;
 	color: rgb(35, 30, 30);
 	margin-bottom: 120px;
+	position: relative;
 }
 .b-7-list .li-price {
 	display: block;
@@ -636,6 +661,7 @@
 	color: #ffffff;
 	font-size: 24px;
 	margin-bottom: 40px;
+	position: relative;
 }
 .b-7-list .li-btn {
 	display: block;
@@ -679,6 +705,9 @@
 	}
 }
 @media screen and (max-width: 767px) {
+	.b-1 {
+		background-position: 80%;
+	}
 	.b-1 h1 {
 		width: 100%;
 	}
@@ -694,6 +723,13 @@
 	.b-2 .abs-img {
 		position: static;
 		margin: 0 auto 30px;
+		-webkit-transform: translateY(10px);
+		-moz-transform: translateY(10px);
+		-ms-transform: translateY(10px);
+		transform: translateY(10px);
+		max-width: 100%;
+	}
+	.b-2 .b-2-wrap.anim .abs-img {
 		-webkit-transform: translateY(0);
 		-moz-transform: translateY(0);
 		-ms-transform: translateY(0);
@@ -728,6 +764,9 @@
 		-ms-transform: translate(-50%,calc(-50% - 5px));
 		transform: translate(-50%,calc(-50% - 5px));
 	}
+	.b-4-list li span {
+		text-align: center;
+	}
 	.b-6 .b-block {
 		padding-top: 0;
 		padding-bottom: 0;
@@ -740,7 +779,7 @@
 		padding-left: 0;
 	}
 	.b-6-list li {
-		margin-top: 0;
+		margin-top: 0 !important;
 	}
 	.b-6-list .abs-img {
 		position: static;

@@ -13,13 +13,14 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
-	<link rel="stylesheet" href="css/contacts.css" type="text/css">
+	<link rel="stylesheet" href="css/gallery.css" type="text/css">
 
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/gallery.js"></script>
 
 </head>
 <body>
@@ -27,14 +28,15 @@
 	<div class="b header">
 		<div class="b-block">
 			<a href="index.html" class="header-logo"><img src="i/logo.png"></a>
+			<a href="index.html" class="header-small-logo"></a>
 			<div class="header-top clearfix">
 				<div class="header-slogan left">С нами становятся сильнее!</div>
 				<div class="header-right right">
 					<div class="header-city">Томск</div>
 					<ul class="header-social">
-						<li><a href="#" target="_blank"><img src="i/social-ico-1.svg"></a></li>
-						<li><a href="#" target="_blank"><img src="i/social-ico-1.svg"></a></li>
-						<li><a href="#" target="_blank"><img src="i/social-ico-2.svg"></a></li>
+						<li><a href="#" target="_blank" class="soc-1"><img src="i/social-ico-1.svg"></a></li>
+						<li><a href="#" target="_blank" class="soc-2"><img src="i/social-ico-2.svg"></a></li>
+						<li><a href="#" target="_blank" class="soc-3"><img src="i/social-ico-3.svg"></a></li>
 					</ul>
 					<a href="tel: 89230000000" class="header-phone">8 (923) 000-00-00</a>
 				</div>
@@ -67,7 +69,7 @@
 						</div>
 					</li>
 					<li><a href="contacts.html">Контакты</a></li>
-					<li><a href="#" class="header-btn">Бесплатное занятие</a></li>
+					<li><a href="#" class="header-btn fancybox">Бесплатное занятие</a></li>
 				</ul>
 			</div>
 			<div class="mobile-btn">
@@ -109,9 +111,9 @@
 				</div>
 				<div class="header-city">Томск</div>
 				<ul class="header-social">
-					<li><a href="#" target="_blank" class="soc-1"><img src="i/social-ico-1.svg"></a></li>
-					<li><a href="#" target="_blank" class="soc-2"><img src="i/social-ico-2.svg"></a></li>
-					<li><a href="#" target="_blank" class="soc-3"><img src="i/social-ico-3.svg"></a></li>
+					<li><a href="#" target="_blank"><img src="i/social-ico-1.svg"></a></li>
+					<li><a href="#" target="_blank"><img src="i/social-ico-2.svg"></a></li>
+					<li><a href="#" target="_blank"><img src="i/social-ico-3.svg"></a></li>
 				</ul>
 				<a href="tel: 89230000000" class="header-phone">8 (923) 000-00-00</a>
 			</div>
@@ -120,77 +122,19 @@
 
 	<div class="b b-1 line">
 		<div class="b-block">
-			<h1 class="title">Контакты</h1>
-			<p class="subtitle">свяжитесь с нами</p>
+			<h1 class="title">Фотогалерея</h1>
+			<p class="subtitle">смотрите</p>
 		</div>
 	</div>
 
 	<div class="b b-2">
 		<div class="b-block">
-			<ul class="b-2-list">
-				<li><a href="tel: 89230000000" class="tel"><img src="i/c-i-1.svg">8 (923) 000 00 00</a></li>
-				<li><a href="mailto: tiger@mail.ru" class="mail"><img src="i/c-i-2.svg">tiger@mail.ru</a></li>
+			<ul class="reviews-list">
+				<li><a href="i/b-3-img-2.jpg" class="fancybox" data-fancybox="reviews"><img src="i/b-3-img-2.jpg"></a></li>
+				<li><a href="i/b-3-img-2.jpg" class="fancybox" data-fancybox="reviews"><img src="i/b-3-img-2.jpg"></a></li>
+				<li><a href="i/b-3-img-2.jpg" class="fancybox" data-fancybox="reviews"><img src="i/b-3-img-2.jpg"></a></li>
 			</ul>
-			<div class="b-2-text">
-				<span>номер доступен в мессенджерах</span>
-				<ul class="header-social">
-					<li><a href="#" target="_blank" class="soc-1"><img src="i/social-ico-1.svg"></a></li>
-					<li><a href="#" target="_blank" class="soc-2"><img src="i/social-ico-2.svg"></a></li>
-					<li><a href="#" target="_blank" class="soc-3"><img src="i/social-ico-3.svg"></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<div class="b b-3">
-		<div class="b-block">
-			<h2 class="title"><span class="hashtag">#</span> <span>TigerKidsTomsk</span> - подписывайтесь, оставляйте отзывы</h2>
-		</div>
-	</div>
-
-	<div class="b b-4">
-		<div class="b-block">
-			<ul class="social-list-1">
-				<li class="li-vk">
-					<div class="vk-top clearfix">
-						<a href="#" class="vk-a left"><img src="i/vk-icon.png"></a>
-						<a href="#" class="subscribe-a right">Подписаться</a>
-					</div>
-					<script type="text/javascript" src="https://vk.com/js/api/openapi.js?159"></script>
-
-					<!-- VK Widget -->
-					<div id="vk_groups"></div>
-					<script type="text/javascript">
-					VK.Widgets.Group("vk_groups", {mode: 3, width: 'auto'}, 10767623);
-					</script>
-				</li>
-				<li class="li-inst">
-					<div class="inst-top clearfix">
-						<a href="#" class="inst-a left"><img src="i/inst-icon.png"></a>
-						<a href="#" class="subscribe-a right">Подписаться</a>
-					</div>
-					<div class="instagram-desktop">
-						<iframe src="https://widget.instagramm.ru/?imageW=3&imageH=3&thumbnail_size=104&type=0&typetext=tigerkidstomsk&head_show=0&profile_show=0&shadow_show=0&bg=255,255,255,1&opacity=true&head_bg=46729b&subscribe_bg=ad4141&border_color=c3c3c3&head_title=" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:350px;height:367px;"></iframe>
-					</div>
-					<div class="instagram-mobile">
-						<iframe src="https://widget.instagramm.ru/?imageW=3&imageH=3&thumbnail_size=74&type=0&typetext=tigerkidstomsk&head_show=0&profile_show=0&shadow_show=0&bg=255,255,255,1&opacity=true&head_bg=46729b&subscribe_bg=ad4141&border_color=c3c3c3&head_title=" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:260px;height:277px;"></iframe>
-					</div>
-				</li>
-				<li class="li-youtube">
-					<div class="youtube-top clearfix">
-						<a href="#" class="youtube-a left"><img src="i/youtube-icon.png"></a>
-						<a href="#" class="subscribe-a right">Подписаться</a>
-					</div>
-					<iframe src="https://www.youtube.com/embed/aWVx_Dx5BJo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					<iframe src="https://www.youtube.com/embed/x_9whF11T74" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</li>
-			</ul>
-			<ul class="social-list-2">
-				<li><a href="#" target="_blank"><img src="i/fb-icon.png">Подписаться</a></li>
-				<li><a href="#" target="_blank"><img src="i/ok-icon.png">Подписаться</a></li>
-				<li><a href="#" target="_blank"><img src="i/g-icon.png">Подписаться</a></li>
-				<li><a href="#" target="_blank"><img src="i/flamp-icon.png">Подписаться</a></li>
-			</ul>
+			<a href="#" class="more-btn">Показать ещё</a>
 		</div>
 	</div>
 
@@ -205,7 +149,7 @@
 					ОГРН 4378-4843894-48484
 				</p>
 				<p>
-					<a href="#" target="_blank">Политика конфиденциальности</a><br>
+					<a href="policy.html" target="_blank">Политика конфиденциальности</a><br>
 					<a href="#" target="_blank">Политика персональных данных</a>
 				</p>
 			</div>
@@ -222,8 +166,10 @@
 				</li>
 				<li>
 					<span><a href="disciplines.html">Дисциплины:</a></span>
-					<span><a href="disciplines-more.html">Джиу Джитсу</a></span>
-					<span><a href="disciplines-more.html">Кудо</a></span>
+					<div  class="disciplines-wrap">
+						<span><a href="disciplines-more.html">Джиу Джитсу</a></span>
+						<span><a href="disciplines-more.html">Кудо</a></span>
+					</div>
 				</li>
 				<li class="big">
 					<span><a href="#">Информация школы:</a></span>
@@ -249,7 +195,77 @@
 		</div>
 	</div>
 
+	<div class="cookie">
+		<div class="b-block">
+			<p>Мы используем файлы cookie. Подробнее - <a href="policy.html" target="_blank">в нашей политике конфиденциальности.</a></p>
+			<div class="cookie-btn">Понятно</div>
+		</div>
+	</div>
+
 	<div style="display:none;">
+		<div class="popup" id="popup-1">
+			<div class="popup-name">хотите убедиться в качестве тренировок</div>
+			<div class="popup-subname">Запишитесь на бесплатное пробное занятие</div>
+			<ul class="popup-list">
+				<li><img src="i/p-i-1.png">Тренировка в действующей группе</li>
+				<li><img src="i/p-i-2.png">Длительность тренировки 55 минут</li>
+			</ul>
+			<form>
+				<div class="select-wrap">
+					<div class="select-area">
+						<span>Выберите пол</span>
+					</div>
+					<div class="select-drop"></div>
+					<select>
+						<option class="value-1" value="m" selected>Муж.</option>
+						<option class="value-2" value="w">Жен.</option>
+					</select>
+				</div>
+				<div class="select-wrap">
+					<div class="select-area">
+						<span>Сколько лет?</span>
+					</div>
+					<div class="select-drop"></div>
+					<select>
+						<option class="value-1" value="3" selected>3</option>
+						<option class="value-2" value="4">4</option>
+						<option class="value-3" value="5">5</option>
+						<option class="value-4" value="6">6</option>
+					</select>
+				</div>
+				<input type="text" placeholder="Имя ребёнка" class="required">
+				<input type="tel" placeholder="Ваш номер телефона" class="required">
+				<input type="text" placeholder="Ваше имя" class="required">
+				<button type="submit">Записаться на бесплатное занятие</button>
+				<div class="button-text"><div class="radio-btn active"></div>отправляя заявку, вы соглашаетесь<br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
+			</form>
+		</div>
+
+		<div class="popup" id="popup-2">
+			<div class="popup-name">Заголовок</div>
+			<div class="popup-subname">Подзаголовок</div>
+			<form>
+				<input type="tel" placeholder="Ваш номер телефона" class="required">
+				<input type="text" placeholder="Ваше имя" class="required">
+				<button type="submit">Записаться на бесплатное занятие</button>
+				<div class="button-text"><div class="radio-btn active"></div>отправляя заявку, вы соглашаетесь<br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
+			</form>
+		</div>
+
+		<div class="popup" id="popup-3">
+			<div class="popup-name">Заголовок</div>
+			<div class="popup-subname">Подзаголовок</div>
+			<form>
+				<div class="file-wrap">
+					<div class="file-inp">Прикрепить резюме</div>
+					<input type="file" class="hide-input">
+				</div>
+				<input type="tel" placeholder="Ваш номер телефона" class="required">
+				<input type="text" placeholder="Ваше имя" class="required">
+				<button type="submit">Записаться на бесплатное занятие</button>
+				<div class="button-text"><div class="radio-btn active"></div>отправляя заявку, вы соглашаетесь<br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
+			</form>
+		</div>
 	</div>
 </body>
 </html>
